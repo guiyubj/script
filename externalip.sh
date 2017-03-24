@@ -24,8 +24,11 @@ case "$1" in
 		curl -s https://4.ifcfg.me/ >> ~/conf/extip.txt
 		scp ~/conf/extip.txt root@45.55.192.222:conf/yu-ws1-extip.txt
 		;;
-
+	
+	# get extip from DNS server
 	""|dns)	dig +short myip.opendns.com @resolver1.opendns.com ;;
+	
+	# get extip from other servers (less recommanded for reliability issues) 
 	ipinfo) curl -s http://ipinfo.io/ip ;;
 	http) curl -s http://whatismyip.akamai.com/ && echo ;;
 	https) curl -s https://4.ifcfg.me/ ;;
