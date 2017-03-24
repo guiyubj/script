@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TrueCrypt>
+	<favorites>
+		<volume mountpoint="/media/truecrypt3" readonly="0" slotnumber="3" system="0">/home/yu/md0/smb-backup/Keys/Keys_WEB_1.tc</volume>
+	</favorites>
+</TrueCrypt>
